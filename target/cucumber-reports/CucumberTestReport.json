@@ -1,0 +1,94 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13103508100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open website http://www.way2automation.com/angularjs-protractor/banking/#/customer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.way2automation.com/angularjs-protractor/banking/#/customer",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.user_already_on_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "User can login website",
+        "description": "",
+        "id": "customer-login;user-can-login-website;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3700122500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I choose account as Harry Potter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Harry Potter",
+                  "offset": 20
+                }
+              ],
+              "location": "LoginTest.chooseAccount(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3254185600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click button Login",
+            "match": {
+              "location": "LoginTest.clickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3050948300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Verify information of user logged correctly",
+            "match": {
+              "location": "LoginTest.verifyInfoCorrect()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Customer login",
+    "description": "In order to user can log in, I want to see my profile so I can log in easily",
+    "id": "customer-login",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/loginCustomer.feature"
+  }
+]
